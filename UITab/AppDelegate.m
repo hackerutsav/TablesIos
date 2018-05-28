@@ -13,8 +13,6 @@
 
 @interface AppDelegate ()
 
-
-
 @end
 
 @implementation AppDelegate
@@ -24,17 +22,19 @@
     // Override point for customization after application launch.
     FeedViewController *feedViewController = [[FeedViewController alloc] init];
     
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:feedViewController];
+    
 
     
     FavouritesViewController *favouritesViewController = [[FavouritesViewController alloc] init];
     ProfileViewController *profileViewController = [[ProfileViewController alloc] init];
 
     
-
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    
+    [tabBarController setViewControllers:@[feedViewController,favouritesViewController,profileViewController]];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = navController;
+    self.window.rootViewController = tabBarController;
                     [self.window makeKeyAndVisible];
     return YES;
 }
