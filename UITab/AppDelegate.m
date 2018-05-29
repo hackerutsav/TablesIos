@@ -22,6 +22,11 @@
     // Override point for customization after application launch.
     FeedViewController *feedViewController = [[FeedViewController alloc] init];
     
+    UINavigationController *navController  = [[UINavigationController alloc] initWithRootViewController:feedViewController];
+    
+    
+    
+    
     
 
     
@@ -34,7 +39,7 @@
     [tabBarController setViewControllers:@[feedViewController,favouritesViewController,profileViewController]];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = tabBarController;
+    self.window.rootViewController = navController;
                     [self.window makeKeyAndVisible];
     return YES;
 }
