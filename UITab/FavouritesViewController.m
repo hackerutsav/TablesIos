@@ -17,10 +17,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"Favourites";
-    UIImageView *vlyop = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"exciting3030"]];
+    UIButton *vlyop = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    [vlyop setImage:[UIImage imageNamed:@"exciting3030"] forState:UIControlStateNormal];
+    [vlyop setImage:[UIImage imageNamed:@"exciting3030"] forState:UIControlStateHighlighted];
     [vlyop setContentMode:UIViewContentModeScaleAspectFit];
-    vlyop.frame = CGRectMake(60, 100, 100 ,114);
+    [vlyop setFrame: CGRectMake(60, 100, 100 ,114)];
     [self.view addSubview:vlyop];
+    
+    [vlyop addTarget:self action:@selector(showZoomed:)
+               forControlEvents:UIControlEventTouchUpInside];
 
     
     
@@ -33,6 +39,26 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(void)showZoomed:(UIButton *)sender
+{
+    UIViewController *tryiosImageController  =[[UIViewController alloc]init];
+    tryiosImageController.view.frame = self.view.frame;
+    tryiosImageController.title = @"Logo";
+    
+    tryiosImageController.view.backgroundColor = [UIColor clearColor];
+    
+    UIImageView *tryiosImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tryios.gif"]];
+    
+    [tryiosImage setContentMode:UIViewContentModeScaleAspectFit];
+    
+    tryiosImage.frame = tryiosImageController.view.frame;
+    
+    
+    [self.navigationController pushViewController:tryiosImageController animated:YES];
+    
+}
+
 
 /*
 #pragma mark - Navigation

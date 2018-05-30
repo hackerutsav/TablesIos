@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C226F9920BED7E8001DFA28 /* FeedTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C226F9820BED7E8001DFA28 /* FeedTable.m */; };
 		3C29875D20BBC96300414217 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C29875C20BBC96300414217 /* FeedViewController.m */; };
 		3C29876020BBCC6100414217 /* FavouritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C29875F20BBCC6100414217 /* FavouritesViewController.m */; };
 		3C29876320BBCCEA00414217 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C29876220BBCCEA00414217 /* ProfileViewController.m */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C226F9720BED7E8001DFA28 /* FeedTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedTable.h; sourceTree = "<group>"; };
+		3C226F9820BED7E8001DFA28 /* FeedTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedTable.m; sourceTree = "<group>"; };
 		3C29875B20BBC96300414217 /* FeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
 		3C29875C20BBC96300414217 /* FeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
 		3C29875E20BBCC6100414217 /* FavouritesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavouritesViewController.h; sourceTree = "<group>"; };
@@ -82,6 +85,8 @@
 				3C29875F20BBCC6100414217 /* FavouritesViewController.m */,
 				3C29876120BBCCEA00414217 /* ProfileViewController.h */,
 				3C29876220BBCCEA00414217 /* ProfileViewController.m */,
+				3C226F9720BED7E8001DFA28 /* FeedTable.h */,
+				3C226F9820BED7E8001DFA28 /* FeedTable.m */,
 			);
 			path = UITab;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C29876020BBCC6100414217 /* FavouritesViewController.m in Sources */,
+				3C226F9920BED7E8001DFA28 /* FeedTable.m in Sources */,
 				3C98B1C020B6E97B00FCA165 /* ViewController.m in Sources */,
 				3C98B1CB20B6E98C00FCA165 /* main.m in Sources */,
 				3C29875D20BBC96300414217 /* FeedViewController.m in Sources */,
