@@ -17,11 +17,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"Favourites";
-    self.tabBarItem.image = [UIImage imageNamed:@"favourites30"];
+    UIImageView *vlyop = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"exciting3030"]];
+    [vlyop setContentMode:UIViewContentModeScaleAspectFit];
+    vlyop.frame = CGRectMake(60, 100, 100 ,114);
+    [self.view addSubview:vlyop];
+
     
     
     
-    self.view.backgroundColor = [UIColor redColor];
+    self.view.backgroundColor = [UIColor whiteColor];
     // Do any additional setup after loading the view.
 }
 

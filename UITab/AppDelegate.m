@@ -36,11 +36,13 @@
     
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     
-    [tabBarController setViewControllers:@[feedViewController,favouritesViewController,profileViewController]];
+//    [tabBarController setViewControllers:@[feedViewController,favouritesViewController,profileViewController]];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+   
     self.window.rootViewController = navController;
-                    [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 
