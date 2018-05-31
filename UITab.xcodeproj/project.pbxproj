@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3C226FA220BEDEB8001DFA28 /* FeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C226FA120BEDEB8001DFA28 /* FeedTableViewController.m */; };
+		3C226FA520BFE3D0001DFA28 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C226FA420BFE3D0001DFA28 /* PhotoViewController.m */; };
 		3C29875D20BBC96300414217 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C29875C20BBC96300414217 /* FeedViewController.m */; };
 		3C29876020BBCC6100414217 /* FavouritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C29875F20BBCC6100414217 /* FavouritesViewController.m */; };
 		3C29876320BBCCEA00414217 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C29876220BBCCEA00414217 /* ProfileViewController.m */; };
@@ -22,6 +23,8 @@
 /* Begin PBXFileReference section */
 		3C226FA020BEDEB8001DFA28 /* FeedTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedTableViewController.h; sourceTree = "<group>"; };
 		3C226FA120BEDEB8001DFA28 /* FeedTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedTableViewController.m; sourceTree = "<group>"; };
+		3C226FA320BFE3D0001DFA28 /* PhotoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		3C226FA420BFE3D0001DFA28 /* PhotoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		3C29875B20BBC96300414217 /* FeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
 		3C29875C20BBC96300414217 /* FeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
 		3C29875E20BBCC6100414217 /* FavouritesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavouritesViewController.h; sourceTree = "<group>"; };
@@ -87,6 +90,8 @@
 				3C29876220BBCCEA00414217 /* ProfileViewController.m */,
 				3C226FA020BEDEB8001DFA28 /* FeedTableViewController.h */,
 				3C226FA120BEDEB8001DFA28 /* FeedTableViewController.m */,
+				3C226FA320BFE3D0001DFA28 /* PhotoViewController.h */,
+				3C226FA420BFE3D0001DFA28 /* PhotoViewController.m */,
 			);
 			path = UITab;
 			sourceTree = "<group>";
@@ -162,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C29876020BBCC6100414217 /* FavouritesViewController.m in Sources */,
+				3C226FA520BFE3D0001DFA28 /* PhotoViewController.m in Sources */,
 				3C98B1C020B6E97B00FCA165 /* ViewController.m in Sources */,
 				3C98B1CB20B6E98C00FCA165 /* main.m in Sources */,
 				3C226FA220BEDEB8001DFA28 /* FeedTableViewController.m in Sources */,

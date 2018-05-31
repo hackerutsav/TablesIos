@@ -7,6 +7,7 @@
 //
 
 #import "FeedTableViewController.h"
+#import "PhotoViewController.h"
 
 @interface FeedTableViewController ()
 
@@ -53,6 +54,7 @@
     }
     
     cell.textLabel.text = @"Test";
+    cell.imageView.image = [UIImage imageNamed:@"sample30"];
     
  
     return cell;
@@ -106,6 +108,11 @@
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"MSg:%d",indexPath.row);
+    NSArray *imageNames = @[@"exciting3030",@"favourites3030",@"feed30",@"profile30",@"exciting3030"];
+    PhotoViewController *photoVC = [[PhotoViewController alloc] init];
+    photoVC.imageFileName = imageNames[indexPath.row];
+    [self.navigationController pushViewController:photoVC animated:YES];
+    
 }
 
 @end
