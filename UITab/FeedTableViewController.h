@@ -1,5 +1,5 @@
 //
-//  FeedTable.h
+//  FeedTableViewController.h
 //  UITab
 //
 //  Created by Utsav Kumar on 30/05/18.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FeedTable : UTableIViewController
+@interface FeedTableViewController : UITableViewController
 
 @end

@@ -10,6 +10,7 @@
 #import "FeedViewController.h"
 #import "FavouritesViewController.h"
 #import "ProfileViewController.h"
+#import "FeedTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,19 +23,25 @@
     // Override point for customization after application launch.
     FeedViewController *feedViewController = [[FeedViewController alloc] init];
     
-    UINavigationController *navController  = [[UINavigationController alloc] initWithRootViewController:feedViewController];
-    
-    
-    
-    
-    
 
+//
+//
+//
+//
+//
+//
+//
+    
+    FeedTableViewController *feedTableViewController = [[FeedTableViewController alloc]initWithStyle:UITableViewStylePlain];
+    
+        UINavigationController *navController  = [[UINavigationController alloc] initWithRootViewController:feedTableViewController];
+    
     
     FavouritesViewController *favouritesViewController = [[FavouritesViewController alloc] init];
     ProfileViewController *profileViewController = [[ProfileViewController alloc] init];
 
     
-    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+//    UITabBarController *tabBarController = [[UITabBarController alloc] init];
     
 //    [tabBarController setViewControllers:@[feedViewController,favouritesViewController,profileViewController]];
     
