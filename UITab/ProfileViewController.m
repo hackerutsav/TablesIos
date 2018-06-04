@@ -8,6 +8,7 @@
 
 #import "ProfileViewController.h"
 #import "UIImageView+WebCache.h"
+#import "AFHTTPSessionManager.h"
 
 @interface ProfileViewController ()
 
@@ -22,6 +23,25 @@
     self.scrollView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
     self.title = @"Profile";
     self.tabBarItem.image = [UIImage imageNamed:@"profile30"];
+    
+    
+    NSURL *baseURL = [NSURL URLWithString:@"https://jsonplaceholder.typicode.com"];
+    NSString *path = @"posts/1";
+    
+    AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc] initWithBaseURL:baseURL];
+    
+    [manager GET:path parameters:nil success:^(NSURLSessionDataTask *task, id responseObject)
+     {
+         // Success
+         NSLog(@"Success: %@", responseObject);
+     }failure:^(NSURLSessionDataTask *task, NSError *error)
+     {
+         // Failure
+         NSLog(@"Failure: %@", error);
+     }];
+    
+    
+
     
     
 

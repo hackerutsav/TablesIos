@@ -1,7 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "group:AFNetworking"
+      name = "AFNetworking">
+      <FileRef
+         location = "group:AFCompatibilityMacros.h">
+      </FileRef>
+      <FileRef
+         location = "group:AFHTTPSessionManager.h">
+      </FileRef>
+      <FileRef
+         location = "group:AFHTTPSessionManager.m">
+      </FileRef>
+      <FileRef
+         location = "group:AFNetworking.h">
+      </FileRef>
+      <FileRef
+         location = "group:AFNetworkReachabilityManager.h">
+      </FileRef>
+      <FileRef
+         location = "group:AFNetworkReachabilityManager.m">
+      </FileRef>
+      <FileRef
+         location = "group:AFSecurityPolicy.h">
+      </FileRef>
+      <FileRef
+         location = "group:AFSecurityPolicy.m">
+      </FileRef>
+      <FileRef
+         location = "group:AFURLRequestSerialization.h">
+      </FileRef>
+      <FileRef
+         location = "group:AFURLRequestSerialization.m">
+      </FileRef>
+      <FileRef
+         location = "group:AFURLResponseSerialization.h">
+      </FileRef>
+      <FileRef
+         location = "group:AFURLResponseSerialization.m">
+      </FileRef>
+      <FileRef
+         location = "group:AFURLSessionManager.h">
+      </FileRef>
+      <FileRef
+         location = "group:AFURLSessionManager.m">
+      </FileRef>
+   </Group>
    <FileRef
-      location = "self:UITab.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>
