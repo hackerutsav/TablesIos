@@ -7,6 +7,7 @@
 //
 
 #import "ProfileViewController.h"
+#import "UIImageView+WebCache.h"
 
 @interface ProfileViewController ()
 
@@ -25,9 +26,11 @@
     
 
     self.view.backgroundColor = [UIColor whiteColor];
-    UIImageView *vlyop = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"exciting3030"]];
-    [vlyop setContentMode:UIViewContentModeScaleAspectFit];
+    UIImageView *vlyop = [[UIImageView alloc] init];
+//    [vlyop setContentMode:UIViewContentModeScaleAspectFit];
     vlyop.frame = CGRectMake(20, 20, 100 ,114);
+    [vlyop sd_setImageWithURL:[NSURL URLWithString:@"https://opensource.google.com/assets/static/images/home/blog/blog_image_1.jpg"]
+          placeholderImage:[UIImage imageNamed:@"exciting3030.png"]];
     [self.scrollView addSubview:vlyop];
     
     UILabel *nameLabel  = [[UILabel alloc] initWithFrame:CGRectMake(20, 140, 280, 40)];

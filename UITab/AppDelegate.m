@@ -22,6 +22,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     FeedViewController *feedViewController = [[FeedViewController alloc] init];
+    ProfileViewController *profileViewController = [[ProfileViewController alloc] init];
     
 
 //
@@ -34,11 +35,11 @@
     
     FeedTableViewController *feedTableViewController = [[FeedTableViewController alloc]initWithStyle:UITableViewStylePlain];
     
-        UINavigationController *navController  = [[UINavigationController alloc] initWithRootViewController:feedTableViewController];
+        UINavigationController *navController  = [[UINavigationController alloc] initWithRootViewController:profileViewController];
     
     
     FavouritesViewController *favouritesViewController = [[FavouritesViewController alloc] init];
-    ProfileViewController *profileViewController = [[ProfileViewController alloc] init];
+
 
     
 //    UITabBarController *tabBarController = [[UITabBarController alloc] init];
